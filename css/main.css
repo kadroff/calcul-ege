@@ -1,0 +1,153 @@
+body {
+  background-color: #F3F3F3;
+}
+
+/*@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+  src: url(fonts/Roboto-Regular.eot);
+  src: url(fonts/Roboto-Regular.svg);
+  src: url(fonts/Roboto-Regular.woff);
+}*/
+
+.navbar {
+  background-color: #FFFFFF;
+  height: 80px;
+  border-bottom: 4px solid #FFD925;
+  position: absolute;
+  color: black;
+  font-size: 24;
+}
+
+
+.navbar-inverse .navbar-nav li{
+  display: inline-block;
+  border-top: 1px dashed #737373 ;
+  border-right: 1px dashed #737373;
+  color: #737373;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color: #737373;
+  padding: 28px;
+
+
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: black;
+  background-color: #FFD925;
+}
+
+.navbar-nav {
+  font-size: 20px;
+}
+
+.form-control {
+  width: 150px;
+}
+
+.tabl {
+  width: 220px;
+  position: relative;
+  top: 250px;
+  left: 450px;
+
+
+}
+
+.house  {
+  margin-top: -7px;
+ }
+
+ .house-border {
+   border-left: 1px dashed #737373;
+ }
+
+.news {
+  margin-left: 40px;
+  border-left: 1px dashed #737373;
+}
+
+.select {
+    border-radius: 0;
+   background: transparent;
+   height: 34px;
+   padding: 5px;
+   border: 0;
+   font-size: 16px;
+   line-height: 1;
+   -webkit-appearance: none;
+   width: 100px;
+   position: relative;
+   top: 250px;
+}
+
+#form {
+  position: relative;
+  top: 240px;
+  left: 430px;
+  width: 280px;
+}
+
+.btn {
+  background-color: #FFDD2D;
+  position: relative;
+  top: -20px;
+}
+
+#kolichestvo {
+  position: relative;
+  /*left: -265px*/
+
+  width: 180px;
+  height: 50px;
+}
+
+#summ {
+  /*position: relative;
+  top: -42px;
+  right: -24px;*/
+  width: 180px;
+  height: 50px;
+}
+
+#evaluation {
+  /*position: relative;
+  top: -84px;
+  left: 319px;*/
+  width: 180px;
+  height: 50px;
+}
+
+.one {
+  position: relative;
+  top: -37px;
+  left: -264px;
+  font-size: 18px;
+  color: #74A3CC;
+}
+
+.two {
+  position: relative;
+  top: -37px;
+  left: -133px;
+  font-size: 18px;
+  color: #74A3CC;
+}
+
+.three {
+  position: relative;
+  top: -37px;
+  left: -71px;
+  font-size: 18px;
+  color: #74A3CC;
+}
+/*.logo a {
+  color: #333333;
+  padding: 10px;
+}
+
+.logo a:hover {
+  color: black;
+  background-color: #FFD925;
+}*/

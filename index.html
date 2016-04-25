@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+    <script src="app.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+             <span class="sr-only">Открыть навигацию</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="responsive-menu">
+            <ul class="nav navbar-nav">
+              <li class="house-border"><a href="#"><img class="house" src="image/internet(1).png"></a></li></img>
+              <li><a href="#">Главная</a></li>
+              <li class="news"><a href="#">Новости</a></li>
+            </ul>
+          </div>
+    </div>
+  </div>
+</div>
+
+  <form id="form">
+    <label for="predmet">Выберите предмет: </label>
+  <select name="predmet" id="predmet">
+        <option value="matematica">Математика</option>
+        <option value="ruskiyYazik">Русский язык</option>
+        <option value="obschestvoznan">Обществознание</option>
+        <option value="physics">Физика</option>
+  </select>
+  <br>
+  <input type="text" name="kolichestvo" id="kolichestvo" class="form-control">
+  <p class="one">Количество первичных баллов:</p>
+  <input type="text" name=summ id="summ" class="form-control">
+  <p class="two">Ваш результат:</p>
+  <input type="text" name=summ id="evaluation" class="form-control">
+  <p class="three">Оценка:</p>
+  <br>
+  <input type="submit" value="Посчитать" class="btn btn-default">
+  </form>
+  <span id="score"></span>
+
+
+
+    <!-- <div class="tabl">
+      <input type="text" class="form-control" id="area" placeholder="Введите число"/>
+      <input type="text" class="form-control" id="summ" placeholder="Значение"/>
+      <button type="button" id="send" class="btn btn-default">Рассчитать</button>
+</div>
+</div> -->
+
+</body>
+</html>
