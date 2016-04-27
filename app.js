@@ -54,18 +54,33 @@ function ruskiyYazik() {
       if (text <= 32) {
         eval = "2";
         $("#evaluation").val(eval);
-      }else if (text <= 36 & text <= 52){
+      }else if (text >= 36 & text <= 52){
         eval = "3";
         $("#evaluation").val(eval);
-      }else if (text <= 53 & text <= 67){
+      }else if (text >= 53 & text <= 67){
         eval = "4";
         $("#evaluation").val(eval);
-      }else if (text <= 69 & text <= 100){
+      }else if (text >= 69 & text <= 100){
         eval = "5";
         $("#evaluation").val(eval);
       }
-    }
+    };
 
+    function history() {
+      if (text <= 30) {
+        eval = "2";
+        $("#evaluation").val(eval);
+      }else if (text >= 32 & text <= 49){
+        eval = "3";
+        $("#evaluation").val(eval);
+      }else if (text >= 51 & text <= 67){
+      eval = "4";
+      $("#evaluation").val(eval);
+    }else if (text >= 69 & text <= 100){
+      eval = "5";
+      $("#evaluation").val(eval);
+    }
+  };
 
 $("#form").submit(function( event ) {
     var predmet = $("#predmet").val(); //берем значение из поля с id #predmet
@@ -114,7 +129,19 @@ var predmeti = {
                     31:"60", 32:"61", 33:"62", 34:"65", 35:"67",
                     36:"69", 37:"71", 38:"74", 39:"76", 40:"78",
                     41:"80", 42:"83", 43:"85", 44:"87", 45:"89",
-                    46:"92", 47:"94", 48:"96", 49:"98", 50:"100"}
+                    46:"92", 47:"94", 48:"96", 49:"98", 50:"100"},
+
+          "history": {1:"3", 2: "6", 3:"9", 4:"12", 5:"15",
+                      6:"18", 7:"21", 8:"24", 9:"27", 10:"30",
+                      11:"32", 12:"34", 13:"35", 14:"36", 15:"38",
+                      16:"39", 17:"40", 18:"42", 19:"43", 20:"44",
+                      21:"45", 22:"47", 23:"48", 24:"49", 25:"51",
+                      26:"52", 27:"53", 28:"54", 29:"56", 30:"57",
+                      31:"58", 32:"60", 33:"61", 34:"62", 35:"63",
+                      36:"65", 37:"66", 38:"67", 39:"69", 40:"70",
+                      41:"71", 42:"72", 43:"75", 44:"78", 45:"80",
+                      46:"83", 47:"85", 48:"88", 49:"90", 50:"93",
+                      51:"95", 52:"98", 53:"100"}
 
 }
 if (isNaN(kolichestvo) || kolichestvo < 1 || kolichestvo > 100) {
@@ -133,6 +160,8 @@ if (isNaN(kolichestvo) || kolichestvo < 1 || kolichestvo > 100) {
     obschestvoznan();
   }else if (predmet === "physics") {
     physics();
+  }else if (predmet === "history") {
+    history();
   }
 
 });
