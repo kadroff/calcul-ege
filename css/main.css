@@ -92,7 +92,8 @@ body {
 .btn {
   background-color: #FFDD2D;
   position: relative;
-  top: -20px;
+  top: -120px;
+  left: 25px;
 }
 
 #kolichestvo {
@@ -141,6 +142,37 @@ body {
   left: -71px;
   font-size: 18px;
   color: #74A3CC;
+}
+
+.four {
+  position: relative;
+  top: -338px;
+  left: 370px;
+  color: #74A3CC;
+  font-size: 18px;
+}
+
+#date {
+  position: relative;
+  top: -257px;
+  left: 370px;
+  width: 120px;
+  font-size: 18px;
+  color: #333;
+  background-color: #FFDD2D;
+  height: 48px;
+}
+
+#predmet {
+  position: relative;
+  top: 31px;
+  left: 191px;
+}
+
+.select-predmet {
+  position: relative;
+  top: 28px;
+  left: 192px;
 }
 /*.logo a {
   color: #333333;
